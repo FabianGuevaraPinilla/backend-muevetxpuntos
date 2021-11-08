@@ -1,0 +1,10 @@
+[{
+  "_id": 1,
+  "tipoEvento": "Virtual"
+},{
+  "_id": 2,
+  "tipoEvento": "Presencial"
+},{
+  "_id": 3,
+  "tipoEvento": "Mixto"
+}]

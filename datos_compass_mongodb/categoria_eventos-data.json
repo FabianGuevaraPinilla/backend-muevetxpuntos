@@ -1,0 +1,13 @@
+[{
+  "_id": 1,
+  "nombre": "Deportes"
+},{
+  "_id": 2,
+  "nombre": "Cultura"
+},{
+  "_id": 3,
+  "nombre": "Educación"
+},{
+  "_id": 4,
+  "nombre": "Recreación"
+}]

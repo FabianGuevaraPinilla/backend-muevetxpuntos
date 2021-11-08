@@ -1,0 +1,234 @@
+[{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657ec"
+  },
+  "id_categoria": 1,
+  "nombre": "Sarten",
+  "marca": "Immusa",
+  "detalle": "Sarten de 18cm de diametro, antiaderente",
+  "path_foto": "/static/images/premios/prem-0013.jpg",
+  "cantidad": 200,
+  "valor_puntos": 200,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:33:11.981Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657ed"
+  },
+  "id_categoria": 1,
+  "nombre": "Plancha de ropa",
+  "marca": "Oster",
+  "detalle": "Plancha de Ropa Oster Vapor Inalambrica",
+  "path_foto": "/static/images/premios/prem-0007.jpg",
+  "cantidad": 10,
+  "valor_puntos": 300,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:33:01.761Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657ee"
+  },
+  "id_categoria": 1,
+  "nombre": "Cafetera",
+  "marca": "Black & Decker",
+  "detalle": "Cafetera Black & Decker 12 tazas Negro",
+  "path_foto": "/static/images/premios/prem-0001.jpg",
+  "cantidad": 20,
+  "valor_puntos": 250,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:33:57.912Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657ef"
+  },
+  "id_categoria": 2,
+  "nombre": "Pet Bow",
+  "marca": "DawpetShop",
+  "detalle": "Pet Bow Elegant Color Surtido 29,5 Cm",
+  "path_foto": "/static/images/premios/prem-0014.jpg",
+  "cantidad": 10,
+  "valor_puntos": 50,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:34:19.097Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f0"
+  },
+  "id_categoria": 2,
+  "nombre": "Tula Mascota",
+  "marca": "Totto",
+  "detalle": "Cargador para gatos o perros de raza pequeña",
+  "path_foto": "/static/images/premios/prem-0008.jpg",
+  "cantidad": 20,
+  "valor_puntos": 250,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:35:10.929Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f1"
+  },
+  "id_categoria": 2,
+  "nombre": "Alimentador Automatico para Gatos",
+  "marca": "Wopet",
+  "detalle": "Alimentador Automatico Para Gatos Wopet",
+  "path_foto": "/static/images/premios/prem-0012.jpg",
+  "cantidad": 15,
+  "valor_puntos": 250,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:35:39.561Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f2"
+  },
+  "id_categoria": 3,
+  "nombre": "Correa de Hombre",
+  "marca": "Bosi",
+  "detalle": "Correa 1023 Cafe Bosi",
+  "path_foto": "/static/images/premios/prem-0005.jpg",
+  "cantidad": 10,
+  "valor_puntos": 180,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:36:21.621Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f3"
+  },
+  "id_categoria": 3,
+  "nombre": "Aretes",
+  "marca": "Johana Manchola Boutique",
+  "detalle": "Aretes Mujer Hoja Metalicos color Dorado",
+  "path_foto": "/static/images/premios/prem-0015.jpg",
+  "cantidad": 10,
+  "valor_puntos": 80,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:36:37.447Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f4"
+  },
+  "id_categoria": 3,
+  "nombre": "Bufanda",
+  "marca": "Arturo Calle",
+  "detalle": "Bufanda textura tejida para hombre, color verde oscuro",
+  "path_foto": "/static/images/premios/prem-0016.jpg",
+  "cantidad": 15,
+  "valor_puntos": 95,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:37:28.095Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f5"
+  },
+  "id_categoria": 4,
+  "nombre": "Banda Elastica",
+  "marca": "TecSports",
+  "detalle": "Banda de ejercicio",
+  "path_foto": "/static/images/premios/prem-0017.jpg",
+  "cantidad": 10,
+  "valor_puntos": 100,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:38:06.151Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f6"
+  },
+  "id_categoria": 4,
+  "nombre": "Full Training Pad",
+  "marca": "Fit & Fury",
+  "detalle": "Colchoneta profesional con acabado resistente y de alto rendimiento",
+  "path_foto": "/static/images/premios/prem-0018.jpg",
+  "cantidad": 15,
+  "valor_puntos": 130,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:38:30.425Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f7"
+  },
+  "id_categoria": 4,
+  "nombre": "Rueda Abdominal",
+  "marca": "Fit & Fury",
+  "detalle": "Accesorio para trabajar y fortalecer la zona abdominal",
+  "path_foto": "/static/images/premios/prem-0019.jpg",
+  "cantidad": 15,
+  "valor_puntos": 120,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:39:53.784Z"
+  }
+},{
+  "_id": {
+    "$oid": "6157ddd89676b0ff6a3657f8"
+  },
+  "id_categoria": 5,
+  "nombre": "Juego de Destornilladores",
+  "marca": "Jigong",
+  "detalle": "Juego de brocas magneticas 115 en 1",
+  "path_foto": "/static/images/premios/prem-0006.jpg",
+  "cantidad": 10,
+  "valor_puntos": 150,
+  "visible": true,
+  "updated": {
+    "$date": "2021-10-09T16:40:09.814Z"
+  }
+},{
+  "_id": {
+    "$oid": "6161c66418872023719bfdd1"
+  },
+  "id_categoria": 5,
+  "nombre": "Caja de herramientas",
+  "marca": "Rimax",
+  "detalle": "Caja de herramienta grande. Resistente y funcional",
+  "path_foto": "/static/images/premios/prem-0004.jpg",
+  "cantidad": 20,
+  "valor_puntos": 100,
+  "visible": true,
+  "created": {
+    "$date": "2021-10-09T16:42:12.854Z"
+  },
+  "updated": {
+    "$date": "2021-10-09T16:42:12.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6161c69a18872023719bfdd4"
+  },
+  "id_categoria": 5,
+  "nombre": "Cinturon Porta Herramientas",
+  "marca": "Stanley",
+  "detalle": "Cinturon Porta Herramientas Stanley",
+  "path_foto": "/static/images/premios/prem-0020.jpg",
+  "cantidad": 10,
+  "valor_puntos": 160,
+  "visible": true,
+  "created": {
+    "$date": "2021-10-09T16:43:06.454Z"
+  },
+  "updated": {
+    "$date": "2021-10-09T16:43:06.454Z"
+  },
+  "__v": 0
+}]

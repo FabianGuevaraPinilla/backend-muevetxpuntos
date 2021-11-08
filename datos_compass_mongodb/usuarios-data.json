@@ -1,0 +1,12 @@
+[ 
+    {
+        "usuario": 1234567,
+        "pass": "58b5444cf1b6253a4317fe12daff411a78bda0a95279b1d5768ebf5ca60829e78da944e8a9160a0b6d428cb213e813525a72650dac67b88879394ff624da482f",
+        "rol": "ADMIN"
+    },
+    {
+        "usuario": 10895726,
+        "pass": "8dd02fa3797561412cbde6cecddc81d042495300dd70c4b42eb414807326592ad4e57edbd700e742fed40b03376d82a208b7873d9de3c0f144393280a191bd8e",
+        "rol": "USER"
+    }
+]
