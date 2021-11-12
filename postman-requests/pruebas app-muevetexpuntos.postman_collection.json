@@ -377,9 +377,34 @@
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
-						"url": null
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "usuario",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "admin1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/usuarios/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"login"
+							]
+						}
 					},
 					"response": []
 				}
@@ -389,11 +414,32 @@
 			"name": "funcionarios",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": []
+				},
+				{
 					"name": "FUNCIONARIO ID",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": null
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/funcionarios/479781",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"funcionarios",
+								"479781"
+							]
+						}
 					},
 					"response": []
 				},
@@ -409,15 +455,182 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:3000/api/eventos/categorias",
+							"raw": "localhost:3000/api/funcionarios/",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"api",
-								"eventos",
-								"categorias"
+								"funcionarios",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripciones",
+			"item": [
+				{
+					"name": "INSCRIPCIONES TOTALES",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/inscripciones",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inscripciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSCRIPCIONES USUARIO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/inscripciones?usuario=23085668",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inscripciones"
+							],
+							"query": [
+								{
+									"key": "usuario",
+									"value": "23085668"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSCRIPCIONES EVENTO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/inscripciones?evento=6161c2eb0936154b7e61437a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inscripciones"
+							],
+							"query": [
+								{
+									"key": "evento",
+									"value": "6161c2eb0936154b7e61437a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSCRIPCIONES EVENTO-USUARIO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/inscripciones?evento=133b2yub3&usuario=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inscripciones"
+							],
+							"query": [
+								{
+									"key": "evento",
+									"value": "133b2yub3"
+								},
+								{
+									"key": "usuario",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NUEVA INSCRIPCION",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdkM2MxYzE0MmNjZTdiMDQ3YjZkOCIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTYzNjMyMDAyM30.oO7uQ75HRCiJhMN9JK6tk3DpWlIVADrCKfBsnLkbJiw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_evento",
+									"value": "6161c2eb0936154b7e61437a",
+									"type": "text"
+								},
+								{
+									"key": "id_documento",
+									"value": "10297376",
+									"type": "text"
+								},
+								{
+									"key": "correo",
+									"value": "jose.coral@miempresa.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/inscripciones",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"inscripciones"
 							]
 						}
 					},

@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "618dcb0330352adc64822a97"
+  },
+  "id_documento": 479781,
+  "id_evento": {
+    "$oid": "6161c2eb0936154b7e614377"
+  },
+  "correo": "guillermo.lopez@miempresa.com",
+  "created": {
+    "$date": "2021-11-12T02:01:39.084Z"
+  },
+  "updated": {
+    "$date": "2021-11-12T02:01:39.084Z"
+  }
+},{
+  "_id": {
+    "$oid": "618dcb7b30352adc64822a9a"
+  },
+  "id_documento": 23085668,
+  "id_evento": {
+    "$oid": "6161c2eb0936154b7e614377"
+  },
+  "correo": "sandro.garay@miempresa.com",
+  "created": {
+    "$date": "2021-11-12T02:03:39.213Z"
+  },
+  "updated": {
+    "$date": "2021-11-12T02:03:39.213Z"
+  }
+},{
+  "_id": {
+    "$oid": "618dcbd430352adc64822a9c"
+  },
+  "id_documento": 23085668,
+  "id_evento": {
+    "$oid": "6161c2eb0936154b7e61436f"
+  },
+  "correo": "sandro.garay@miempresa.com",
+  "created": {
+    "$date": "2021-11-12T02:05:08.360Z"
+  },
+  "updated": {
+    "$date": "2021-11-12T02:05:08.360Z"
+  }
+},{
+  "_id": {
+    "$oid": "618dcbe530352adc64822a9e"
+  },
+  "id_documento": 23085668,
+  "id_evento": {
+    "$oid": "6161c2eb0936154b7e61437a"
+  },
+  "correo": "sandro.garay@miempresa.com",
+  "created": {
+    "$date": "2021-11-12T02:05:25.535Z"
+  },
+  "updated": {
+    "$date": "2021-11-12T02:05:25.535Z"
+  }
+},{
+  "_id": {
+    "$oid": "618dcc0330352adc64822aa0"
+  },
+  "id_documento": 10297376,
+  "id_evento": {
+    "$oid": "6161c2eb0936154b7e61437a"
+  },
+  "correo": "jose.coral@miempresa.com",
+  "created": {
+    "$date": "2021-11-12T02:05:55.930Z"
+  },
+  "updated": {
+    "$date": "2021-11-12T02:05:55.930Z"
+  }
+}]

@@ -8,6 +8,8 @@ const eventosController = require("../controllers/eventos.controller");
 router.get(/categorias/, eventosController.getCategorias);
 router.get(/tipos/, eventosController.getTipos);
 
+//localhost/api/eventos/categoria/
+
 router.post("/", eventosController.create);
 router.get("/",eventosController.find);
 router.get("/:id",eventosController.findOne);

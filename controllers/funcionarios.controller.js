@@ -35,7 +35,7 @@ exports.find =function(req, res){
 }
 
 exports.findOne =function(req, res){
-    Funcionario.findOne({_id: req.params.id}, function(err,funcionario){
+    Funcionario.findOne({id_documento: req.params.id}, function(err,funcionario){
         res.json(funcionario)
     })
 }

@@ -11,6 +11,7 @@ var usuariosRouter = require('./routes/usuarios.router');
 var premiosRouter = require('./routes/premios.router');
 var eventosRouter = require('./routes/eventos.router');
 var sucursalesRouter = require('./routes/sucursales.router');
+var inscripcionesRouter = require('./routes/inscripcionesEventos.router');
 
 var app = express();
 
@@ -34,7 +35,7 @@ app.use('/api/funcionarios', funcionariosRouter);
 app.use('/api/premios', premiosRouter);
 app.use('/api/eventos', eventosRouter);
 app.use('/api/sucursales', sucursalesRouter);
-
+app.use('/inscripciones', inscripcionesRouter);
 
 
 // catch 404 and forward to error handler

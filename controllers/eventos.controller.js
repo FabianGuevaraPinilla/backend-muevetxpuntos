@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const Evento = require("../models/eventos.model");
 const CategoriaEvento = require("../models/categoriaEventos.model");
 const TipoEvento = require("../models/tipoEventos.model");
+
+
 //modelo de respuesta
 let response = {
     msg: "",
@@ -13,6 +15,35 @@ let response = {
 
 // método para crear un evento
 exports.create = function (req, res) {
+    let evento = new Premio({
+        id_categoria: req.body.id_categoria,
+        id_tipo: req.body.id_tipo,
+        id_sucursal: req.body.sucursal,
+        titulo: req.body.titulo,
+        descripcion: req.body.descripcion,
+        fecha_inicio: req.body.fecha_inicio,
+        fecha_fin: req.body.fecha_inicio,
+        lugar: req.body.lugar,
+        url: req.body.url,
+        path_foto: req.body.path_foto,
+        cupo: req.body.cupo,
+        valor_puntos: req.body.valor_puntos,
+        disponible: req.body.disponible,
+    })
+
+    evento.save(function (err) {
+        if (err) {
+            console.log = false,
+                response.exito = false,
+                response.msg = "error al guardar el evento"
+            res.json(response)
+            return;
+        }
+        response.exito = true,
+            response.msg = "el evento se guardó correctamente"
+        res.json(response)
+    })
+
 }
 
 // método para retornar todos los eventos
@@ -176,9 +207,48 @@ exports.findOne = function (req, res, next) {
 }
 // método para actualizar un evento con un id
 exports.update = function (req, res) {
+    let evento = {
+        id_categoria: req.body.id_categoria,
+        id_tipo: req.body.id_tipo,
+        id_sucursal: req.body.sucursal,
+        titulo: req.body.titulo,
+        descripcion: req.body.descripcion,
+        fecha_inicio: req.body.fecha_inicio,
+        fecha_fin: req.body.fecha_inicio,
+        lugar: req.body.lugar,
+        url: req.body.url,
+        path_foto: req.body.path_foto,
+        cupo: req.body.cupo,
+        valor_puntos: req.body.valor_puntos,
+        disponible: req.body.disponible,
+    }
+    Evento.findByIdAndUpdate(req.params.id, { $set: evento }, function (err) {
+        if (err) {
+            console.log = false,
+                response.exito = false,
+                response.msg = "error al modificar el evento"
+            res.json(response)
+            return;
+        }
+        response.exito = true,
+            response.msg = "el evento se modificó correctamente"
+        res.json(response)
+    })
 }
 // método para eliminar un evento con un id
 exports.remove = function (req, res) {
+    Evento.findByIdAndRemove({ _id: req.params.id }, function (err) {
+        if (err) {
+            console.error = false,
+                response.exito = false,
+                response.msg = "error al eliminar el evento"
+            res.json(response)
+            return;
+        }
+        response.exito = true,
+            response.msg = "el evento se eliminó correctamente"
+        res.json(response)
+    })
 }
 
 // método para conseguir las categórias de evento
@@ -212,3 +282,4 @@ exports.getTipos = function (req, res) {
         }
     });
 }
+
