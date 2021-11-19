@@ -33,7 +33,7 @@ database.mongoConnect();
 app.use('/usuarios', usuariosRouter);
 
 app.use('/api/images', imagenesRouter)
-// app.use(auth)
+app.use(auth)
 //Router
 app.use('/api/funcionarios', funcionariosRouter);
 
