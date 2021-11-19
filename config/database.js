@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
-const host = "localhost";
-const port = "27017";
-const db = "hr";
+
+const config = require("./configEnvirroment")
 
 exports.mongoConnect = () =>{
-    const mongoStringConnectiont =`mongodb://${host}:${port}/${db}`;
+    const mongoStringConnectiont =`mongodb+srv://${config.USER_MONGO}:${config.PASS_MONGO}@cluster0.ainyd.mongodb.net/${config.BD}?retryWrites=true&w=majority`;
     mongoose.connect(mongoStringConnectiont);
     mongoose.Promise =global.Promise;
     const dbConnection =mongoose.connection;
