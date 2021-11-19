@@ -15,7 +15,7 @@ var eventosRouter = require('./routes/eventos.router');
 var sucursalesRouter = require('./routes/sucursales.router');
 var inscripcionesRouter = require('./routes/inscripcionesEventos.router');
 var puntosRouter = require('./routes/puntos.router');
-
+var imagenesRouter = require('./routes/imagenes.router');
 
 var app = express();
 
@@ -25,14 +25,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static/images', express.static(path.join(__dirname,'../assets/images')));
 app.use(cors());
 //Mongo connection
 database.mongoConnect();
 
 app.use('/usuarios', usuariosRouter);
 
-
-app.use(auth)
+app.use('/api/images', imagenesRouter)
+// app.use(auth)
 //Router
 app.use('/api/funcionarios', funcionariosRouter);
 
