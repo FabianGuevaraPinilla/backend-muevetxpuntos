@@ -2,9 +2,11 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var cors = require('cors');
 var logger = require('morgan');
 var database = require("./config/database")
 var auth = require("./auth/main_auth")
+
 
 var funcionariosRouter = require('./routes/funcionarios.router');
 var usuariosRouter = require('./routes/usuarios.router');
@@ -12,6 +14,8 @@ var premiosRouter = require('./routes/premios.router');
 var eventosRouter = require('./routes/eventos.router');
 var sucursalesRouter = require('./routes/sucursales.router');
 var inscripcionesRouter = require('./routes/inscripcionesEventos.router');
+var puntosRouter = require('./routes/puntos.router');
+
 
 var app = express();
 
@@ -21,12 +25,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
+app.use(cors());
 //Mongo connection
 database.mongoConnect();
 
 app.use('/usuarios', usuariosRouter);
+
 
 app.use(auth)
 //Router
@@ -36,7 +40,7 @@ app.use('/api/premios', premiosRouter);
 app.use('/api/eventos', eventosRouter);
 app.use('/api/sucursales', sucursalesRouter);
 app.use('/inscripciones', inscripcionesRouter);
-
+app.use('/puntos', puntosRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

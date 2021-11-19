@@ -5,8 +5,13 @@
         "rol": "ADMIN"
     },
     {
-        "usuario": 10895726,
+        "usuario": 479781,
         "pass": "8dd02fa3797561412cbde6cecddc81d042495300dd70c4b42eb414807326592ad4e57edbd700e742fed40b03376d82a208b7873d9de3c0f144393280a191bd8e",
+        "rol": "USER"
+    },
+    {
+        "usuario": 71913692,
+        "pass": "5c2cb2d1c43e57f9038e8270f1cc434e6ebf9c7c80c60981a71619826a504e4ca2077a5f3b3f1cf4c0b0a6e49307b90bbb781d081c8047918163d2d09456469d",
         "rol": "USER"
     }
 ]

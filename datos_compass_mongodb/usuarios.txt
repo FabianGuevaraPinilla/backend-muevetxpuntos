@@ -2,6 +2,11 @@
 admin1
 ADMIN
 
-10895726
+479781
 cenizasalviento
+USER
+
+
+71913692
+amalavida
 USER
