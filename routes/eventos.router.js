@@ -1,5 +1,6 @@
-const express =require("express");
-const router =express.Router();
+const express = require("express");
+const auth_admin = require("../auth/auth_admin");
+const router = express.Router();
 const eventosController = require("../controllers/eventos.controller");
 // se usa una expresión regular para que la ruta que contenga la palabra "categorias" y "tipos"
 // entre de una a esta url
@@ -10,12 +11,12 @@ router.get(/tipos/, eventosController.getTipos);
 
 //localhost/api/eventos/categoria/
 
-router.post("/", eventosController.create);
-router.get("/",eventosController.find);
-router.get("/:id",eventosController.findOne);
-router.put("/:id",eventosController.update);
-router.delete("/:id",eventosController.remove);
+router.post("/", auth_admin, eventosController.create);
+router.get("/", eventosController.find);
+router.get("/:id", eventosController.findOne);
+router.put("/:id", auth_admin, eventosController.update);
+router.delete("/:id", auth_admin, eventosController.remove);
 
 
 
-module.exports =router
+module.exports = router

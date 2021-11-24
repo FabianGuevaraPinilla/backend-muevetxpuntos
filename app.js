@@ -16,6 +16,7 @@ var sucursalesRouter = require('./routes/sucursales.router');
 var inscripcionesRouter = require('./routes/inscripcionesEventos.router');
 var puntosRouter = require('./routes/puntos.router');
 var imagenesRouter = require('./routes/imagenes.router');
+const auth_admin = require('./auth/auth_admin');
 
 var app = express();
 
@@ -35,7 +36,7 @@ app.use('/usuarios', usuariosRouter);
 app.use('/api/images', imagenesRouter)
 app.use(auth)
 //Router
-app.use('/api/funcionarios', funcionariosRouter);
+app.use('/api/funcionarios', auth_admin, funcionariosRouter);
 
 app.use('/api/premios', premiosRouter);
 app.use('/api/eventos', eventosRouter);

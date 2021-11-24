@@ -22,6 +22,7 @@ exports.login = function(req, res, next){
 
     Usuario.findOne({ usuario: req.body.usuario, pass: hashedpass}, function(err, usuario){
         let response = {
+            usuario: null,
         token:null,
         rol: null,
         fecha_acceso: null
@@ -32,6 +33,7 @@ exports.login = function(req, res, next){
                 id: usuario._id,
                 usuario: usuario.usuario
             }, "__secret__")
+            response.usuario = usuario.usuario,
             response.rol =  usuario.rol;
             response.fecha_acceso = usuario.fecha_acceso;
         }
