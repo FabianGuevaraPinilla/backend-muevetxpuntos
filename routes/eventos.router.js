@@ -11,11 +11,11 @@ router.get(/tipos/, eventosController.getTipos);
 
 //localhost/api/eventos/categoria/
 
-router.post("/", auth_admin, eventosController.create);
+router.post("/",eventosController.create);
 router.get("/", eventosController.find);
 router.get("/:id", eventosController.findOne);
-router.put("/:id", auth_admin, eventosController.update);
-router.delete("/:id", auth_admin, eventosController.remove);
+router.put("/:id", eventosController.update);
+router.delete("/:id", eventosController.remove);
 
 
 
