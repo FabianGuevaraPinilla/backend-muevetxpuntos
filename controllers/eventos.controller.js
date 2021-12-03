@@ -12,10 +12,9 @@ let response = {
 }
 
 
-
 // método para crear un evento
 exports.create = function (req, res) {
-    let evento = new Premio({
+    let evento = new Evento({
         id_categoria: req.body.id_categoria,
         id_tipo: req.body.id_tipo,
         id_sucursal: req.body.sucursal,

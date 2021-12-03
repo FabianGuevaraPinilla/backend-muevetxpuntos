@@ -36,13 +36,13 @@ app.use('/usuarios', usuariosRouter);
 app.use('/api/images', imagenesRouter)
 app.use(auth)
 //Router
-app.use('/api/funcionarios', auth_admin, funcionariosRouter);
-
+app.use('/api/funcionarios', funcionariosRouter);
 app.use('/api/premios', premiosRouter);
 app.use('/api/eventos', eventosRouter);
 app.use('/api/sucursales', sucursalesRouter);
 app.use('/inscripciones', inscripcionesRouter);
 app.use('/puntos', puntosRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
