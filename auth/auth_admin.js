@@ -1,4 +1,6 @@
+//este middleware no estaba funcionando
 module.exports = (req, res, next)=>{
+
     
     if(req.usuario.rol == "ADMIN"){
         next()

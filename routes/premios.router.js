@@ -1,5 +1,5 @@
-const express =require("express");
-const router =express.Router();
+const express = require("express");
+const router = express.Router();
 
 const auth_admin = require("../auth/auth_admin");
 
@@ -11,12 +11,12 @@ const premiosController = require("../controllers/premios.controller");
 // uu parametro y buscando un
 router.get(/categorias/, premiosController.getCategorias)
 
-router.post("/",auth_admin,  premiosController.create)
-router.get("/",premiosController.find)
-router.get("/:id",premiosController.findOne)
-router.put("/:id",auth_admin, premiosController.update)
-router.delete("/:id",auth_admin, premiosController.remove)
+router.post("/", premiosController.create)
+router.get("/", premiosController.find)
+router.get("/:id", premiosController.findOne)
+router.put("/:id", premiosController.update)
+router.delete("/:id", premiosController.remove)
 
 
 
-module.exports =router
+module.exports = router
